@@ -1,0 +1,19 @@
+{
+  "name": "fake-reddit",
+  "version": "1.0.0",
+  "description": "A very simple project to get the hang of express and EJS. It is a (very) simplified version of the template that reddit uses. (I'll be using a .JSON file as the fake data as well)",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusLedo/fake-reddit.git"
+  },
+  "author": "Callisto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcusLedo/fake-reddit/issues"
+  },
+  "homepage": "https://github.com/MarcusLedo/fake-reddit#readme"
+}
