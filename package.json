@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/MarcusLedo/fake-reddit/issues"
   },
-  "homepage": "https://github.com/MarcusLedo/fake-reddit#readme"
+  "homepage": "https://github.com/MarcusLedo/fake-reddit#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
 }
