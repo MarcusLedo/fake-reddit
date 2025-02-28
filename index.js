@@ -28,6 +28,10 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("*", (req, res) => {
+  res.render("noPageFound");
+});
+
 app.listen(3000, () => {
   console.log("Listening on port 3000.");
 });
