@@ -1,0 +1,69 @@
+body {
+  background-color: #0e1113;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.navbar {
+  padding: 6px;
+  border-bottom: 1px solid #464c4e;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.icon-logo {
+  width: 2.7rem;
+  margin-right: 2.5px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38%;
+
+  padding: 8px;
+  border-radius: 18px;
+  background-color: #20272b;
+}
+
+.search-input {
+  font-size: 0.9rem;
+  color: #adbbc4;
+  margin-left: 12px;
+  width: 100%;
+
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.label-logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.log-in-btn {
+  background-color: #d93900;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 0.75rem 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+}

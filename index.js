@@ -13,6 +13,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
+app.use(express.static(path.join(__dirname, "public"))); // <--- Mapping the file
+
 app.get("/r/:subreddit", (req, res) => {
   const { subreddit } = req.params;
   console.log(redditData[subreddit]);
