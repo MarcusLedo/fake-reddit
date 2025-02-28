@@ -40,5 +40,30 @@
         </section>
       </div>
     </nav>
+
+    <main>
+      <section class="sub-header">
+        <div
+          class="sub-header-banner"
+          style="
+            background-image: url('<%= subRedditBanner %>');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 65%;
+          "
+        ></div>
+        <section class="sub-header-info">
+          <div class="sub-icon-and-name">
+            <img class="sub-icon" src="<%= subRedditIcon %>" alt="" />
+            <span class="sub-name"> <%= name %></span>
+          </div>
+
+          <div class="sub-buttons">
+            <button class="create-post-btn">+ Create Post</button>
+            <button class="join-btn">Join</button>
+          </div>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
