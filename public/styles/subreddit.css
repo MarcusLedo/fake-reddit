@@ -65,6 +65,11 @@ main {
   font-weight: 800;
 }
 
+.link-to-homepage {
+  text-decoration: none;
+  color: white;
+}
+
 .log-in-btn {
   background-color: #d93900;
   color: white;
