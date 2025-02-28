@@ -190,3 +190,63 @@ main {
   border-radius: 28px;
   max-width: 80%;
 }
+
+@media screen and (max-width: 570px) {
+  .header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .label-logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+
+    padding: 8px;
+    border-radius: 18px;
+    background-color: #20272b;
+  }
+
+  .sub-icon {
+    border-radius: 624.9375rem;
+    height: 40px;
+  }
+
+  .sub-name {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .sub-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .join-btn {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 2.8rem;
+    height: 1.4rem;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .create-post-btn {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 1.4rem;
+    padding: 0;
+  }
+
+  .sub-description {
+    display: none;
+  }
+}
