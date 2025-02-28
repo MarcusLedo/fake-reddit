@@ -31,7 +31,7 @@
           <input
             class="search-input"
             type="text"
-            placeholder="This does not nothing atm"
+            placeholder="This does nothing atm"
           />
         </section>
 
@@ -49,7 +49,7 @@
             background-image: url('<%= subRedditBanner %>');
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: 50% 65%;
+            background-position: 50% 55%;
           "
         ></div>
         <section class="sub-header-info">
@@ -62,6 +62,32 @@
             <button class="create-post-btn">+ Create Post</button>
             <button class="join-btn">Join</button>
           </div>
+        </section>
+      </section>
+
+      <section class="sub-content">
+        <section class="sub-feed">
+          <%for(const post of posts){%>
+          <section class="post">
+            <div class="post-info">
+              <span class="author">u/<%= post.author %></span>
+              <h3><%= post.title %></h3>
+            </div>
+
+            <div class="post-image">
+              <img class="p-img" src="<%= post.img %>" alt="" />
+            </div>
+          </section>
+          <%}%>
+        </section>
+
+        <section class="sub-description">
+          <h3 class="sub-name-desc"><%= name %></h3>
+          <p class="description-text"><%= description %></p>
+          <span>
+            <b>Members:</b>
+            <span class="subs-amount"><%= subscribers %></span></span
+          >
         </section>
       </section>
     </main>
