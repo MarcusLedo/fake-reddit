@@ -1,0 +1,252 @@
+body {
+  position: relative;
+  background-color: #0e1113;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1072px;
+}
+
+.navbar {
+  padding: 6px;
+  border-bottom: 1px solid #464c4e;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.icon-logo {
+  width: 2.7rem;
+  margin-right: 2.5px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38%;
+
+  padding: 8px;
+  border-radius: 18px;
+  background-color: #20272b;
+}
+
+.search-input {
+  font-size: 0.9rem;
+  color: #adbbc4;
+  margin-left: 12px;
+  width: 100%;
+
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.label-logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.log-in-btn {
+  background-color: #d93900;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 0.75rem 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.sub-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.sub-header-info {
+  /* background-image: url(https://images.squarespace-cdn.com/content/v1/606d4deb4db8c15ea53b3624/1617781631369-1MXKY1XUZXMPNL3TVF2X/banner-3.jpg?format=2500w); */
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+
+  top: 70%;
+}
+
+.sub-icon-and-name {
+  margin-left: 8px;
+}
+
+.sub-header-banner {
+  padding: 7%;
+  border-radius: 12px;
+  opacity: 0.8;
+}
+
+.sub-icon {
+  border-radius: 624.9375rem;
+  height: 80px;
+}
+
+.sub-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.create-post-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 0.8rem 0.75rem 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-right: 1.5px;
+}
+
+.join-btn {
+  background-color: #115bca;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 0.75rem 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-left: 1.5px;
+}
+
+.sub-content {
+  display: flex;
+  margin-top: 100px;
+}
+
+.sub-description {
+  position: sticky;
+  align-self: flex-start;
+  top: 30px;
+  background-color: black;
+  max-width: 275px;
+  padding: 4px 10px 16px;
+  border-radius: 24px;
+  color: #8ba2ad;
+  margin-left: 2%;
+}
+
+.sub-name-desc {
+  font-size: 1rem;
+}
+
+.description-text {
+  font-size: 0.9rem;
+}
+
+.subs-amount {
+  color: white;
+  font-weight: 800;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+
+  border-top: 0.5px solid #464c4e;
+
+  margin-bottom: 40px;
+}
+
+.post-info {
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+.post-image {
+  display: flex;
+  justify-content: center;
+  border-radius: 28px;
+}
+
+.p-img {
+  border-radius: 28px;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 570px) {
+  .header {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .label-logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+
+    padding: 8px;
+    border-radius: 18px;
+    background-color: #20272b;
+  }
+
+  .sub-icon {
+    border-radius: 624.9375rem;
+    height: 40px;
+  }
+
+  .sub-name {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .sub-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .join-btn {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 2.8rem;
+    height: 1.4rem;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .create-post-btn {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 1.4rem;
+    padding: 0;
+  }
+
+  .sub-description {
+    display: none;
+  }
+}

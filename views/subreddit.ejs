@@ -3,7 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link rel="stylesheet" href="/styles/subreddit.css" />
     <title><%= name %></title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <div class="header">
+        <section class="logo">
+          <img
+            class="icon-logo"
+            src="https://media.stickerswiki.app/reddit_pack/1756756.512.webp"
+            alt=""
+          />
+          <span class="label-logo">redge</span>
+        </section>
+
+        <section class="search-bar">
+          <span class="material-symbols-outlined search-icon"> search </span>
+          <input
+            class="search-input"
+            type="text"
+            placeholder="This does nothing atm"
+          />
+        </section>
+
+        <section class="nav-buttons">
+          <button class="log-in-btn">Log In</button>
+        </section>
+      </div>
+    </nav>
+
+    <main>
+      <section class="sub-header">
+        <div
+          class="sub-header-banner"
+          style="
+            background-image: url('<%= subRedditBanner %>');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 55%;
+          "
+        ></div>
+        <section class="sub-header-info">
+          <div class="sub-icon-and-name">
+            <img class="sub-icon" src="<%= subRedditIcon %>" alt="" />
+            <span class="sub-name"> <%= name %></span>
+          </div>
+
+          <div class="sub-buttons">
+            <button class="create-post-btn">+ Create Post</button>
+            <button class="join-btn">Join</button>
+          </div>
+        </section>
+      </section>
+
+      <section class="sub-content">
+        <section class="sub-feed">
+          <%for(const post of posts){%>
+          <section class="post">
+            <div class="post-info">
+              <span class="author">u/<%= post.author %></span>
+              <h3><%= post.title %></h3>
+            </div>
+
+            <div class="post-image">
+              <img class="p-img" src="<%= post.img %>" alt="" />
+            </div>
+          </section>
+          <%}%>
+        </section>
+
+        <section class="sub-description">
+          <h3 class="sub-name-desc"><%= name %></h3>
+          <p class="description-text"><%= description %></p>
+          <span>
+            <b>Members:</b>
+            <span class="subs-amount"><%= subscribers %></span></span
+          >
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

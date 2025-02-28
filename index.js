@@ -13,6 +13,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
+app.use(express.static(path.join(__dirname, "public"))); // <--- Mapping the file
+
 app.get("/r/:subreddit", (req, res) => {
   const { subreddit } = req.params;
   console.log(redditData[subreddit]);
@@ -20,6 +22,14 @@ app.get("/r/:subreddit", (req, res) => {
 
   res.render("subreddit", { ...data });
   //The second parameter of .render is expected to be an object
+});
+
+app.get("/", (req, res) => {
+  res.render("home");
+});
+
+app.get("*", (req, res) => {
+  res.render("noPageFound");
 });
 
 app.listen(3000, () => {
