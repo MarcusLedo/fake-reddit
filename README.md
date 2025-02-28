@@ -6,5 +6,8 @@ A very simple project to get the hang of express and EJS. It is a (very) simplif
 
 
 
-
 ![redge-2](https://github.com/user-attachments/assets/911d318f-d4ab-4cf1-86db-68b626a1270b)
+
+
+
+![redge-3](https://github.com/user-attachments/assets/8e366e54-92db-457a-8031-12663f164290)
