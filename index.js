@@ -17,11 +17,10 @@ app.use(express.static(path.join(__dirname, "public"))); // <--- Mapping the fil
 
 app.get("/r/:subreddit", (req, res) => {
   const { subreddit } = req.params;
-  console.log(redditData[subreddit]);
   const data = redditData[subreddit];
 
-  res.render("subreddit", { ...data });
-  //The second parameter of .render is expected to be an object
+  if (data) res.render("subreddit", { ...data });
+  else res.render("noPageFound");
 });
 
 app.get("/", (req, res) => {
